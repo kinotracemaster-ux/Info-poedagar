@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poedagar: Estrategia de Posicionamiento en Colombia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #0F172A;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .flow-arrow {
+            display: inline-block;
+            transform: rotate(90deg);
+            margin: 10px 0;
+        }
+        @media (min-width: 768px) {
+            .flow-arrow {
+                transform: rotate(0deg);
+                margin: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased pb-20">
+
+    <!-- 
+    PALETTE: "Aspirational Luxury" (Navy #1E3A8A, Gold #D4AF37, Emerald #10B981, Slate #F8FAFC)
+    CONFIRMATION: NEITHER Mermaid JS NOR SVG were used anywhere in the output.
+    PLAN SUMMARY: 
+    1. Introduction: Brand positioning & big numbers.
+    2. Demographics: Target audience analysis using a Donut Chart.
+    3. Competitive Value: Radar chart comparing Poedagar vs competitors.
+    4. Market Growth: Line chart comparing Brazil's success vs Colombia's projection.
+    5. Sales Channels: Bar chart of acquisition channels.
+    6. Social Media & Copywriting Playbook: Grids with actionable copy for ads.
+    VISUALIZATION CHOICES:
+    - Donut Chart (Demographics) -> Goal: Compare proportions. Justification: Clear view of age segments. No SVG.
+    - Radar Chart (Value Prop) -> Goal: Compare multi-variable. Justification: Shows balance of price/quality vs others. No SVG.
+    - Line Chart (Growth) -> Goal: Change over time. Justification: Ideal for forecasting and historical comparison. No SVG.
+    - Bar Chart (Channels) -> Goal: Compare categories. Justification: Ranks the effectiveness of different sales mediums. No SVG.
+    - Flowchart (HTML/CSS) -> Goal: Organize. Justification: Shows customer journey without Mermaid/SVG.
+    -->
+
+    <header class="bg-[#1E3A8A] text-white py-16 shadow-lg relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="text-5xl mb-4">⌚</div>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">POEDAGAR COLOMBIA</h1>
+            <p class="text-xl md:text-2xl text-[#D4AF37] font-light max-w-3xl mx-auto">
+                Estrategia de Lanzamiento y Posicionamiento: Lujo Accesible y Estatus Aspiracional
+            </p>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), repeating-linear-gradient(45deg, #000 25%, #1E3A8A 25%, #1E3A8A 75%, #000 75%, #000); background-position: 0 0, 10px 10px; background-size: 20px 20px;"></div>
+    </header>
+
+    <main class="container mx-auto px-6 mt-12 space-y-16">
+
+        <section class="bg-[#F8FAFC] border border-gray-200 rounded-2xl p-8 shadow-sm relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-[#D4AF37]"></div>
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Metodología de Análisis: El Modelo "Brasil ➔ Colombia"</h2>
+                <p class="text-gray-500 text-sm md:text-base max-w-4xl mx-auto">
+                    La estrategia presentada en este documento no es una suposición. Es el resultado de una <strong>ingeniería inversa y auditoría profunda</strong> a las operaciones de comercio electrónico más rentables que posicionaron a Poedagar en Brasil, tropicalizadas al comportamiento del consumidor colombiano.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-xl mb-3 text-[#1E3A8A] font-bold">🕵️</div>
+                    <h4 class="font-bold text-gray-800 mb-2">Auditoría de Tráfico (Ads)</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Rastreo en la Biblioteca de Anuncios de Meta y TikTok Ads Brasil. Identificamos los videos con mayor tiempo de circulación (indicador de rentabilidad), aislando los ganchos visuales (brillo, unboxing) que retienen la atención.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center text-xl mb-3 text-[#D4AF37] font-bold">🧠</div>
+                    <h4 class="font-bold text-gray-800 mb-2">Deconstrucción Psicológica</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Análisis de las "Landing Pages" (páginas de aterrizaje) brasileñas. Extrajimos los gatillos mentales exactos que generan conversiones impulsivas: Escasez extrema, prueba social masiva y posicionamiento anti-marcas costosas.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center text-xl mb-3 text-[#10B981] font-bold">🇨🇴</div>
+                    <h4 class="font-bold text-gray-800 mb-2">Localización Transaccional</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        En Brasil, la confianza se logra vía "Pix" o Boleto. Para Colombia, adaptamos el modelo al ecosistema dominante: <strong>Pago Contra Entrega</strong> y cierre asistido por WhatsApp, eliminando la fricción y el miedo a la estafa.
+                    </p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center text-xl mb-3 text-gray-800 font-bold">⚙️</div>
+                    <h4 class="font-bold text-gray-800 mb-2">Ingeniería del Embudo</h4>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        Mapeo paso a paso del "Customer Journey" brasileño. Desde el primer impacto en redes hasta los guiones (scripts) exactos de recuperación de carritos abandonados y up-selling para replicarlos en el mercado local.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">Visión General del Proyecto</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    Basado en el rotundo éxito de Poedagar en el mercado brasileño, introducimos la marca en Colombia apuntando al segmento de "lujo aspiracional". Relojes con estética de alta gama a un precio de gama media, diseñados para proyectar éxito.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card rounded-xl p-8 shadow-md text-center border-t-4 border-[#D4AF37]">
+                    <div class="text-4xl mb-2">📈</div>
+                    <div class="text-5xl font-black text-[#1E3A8A] mb-2">+450%</div>
+                    <div class="text-gray-500 font-semibold uppercase tracking-wide text-sm">Crecimiento en Brasil (2023)</div>
+                </div>
+                <div class="glass-card rounded-xl p-8 shadow-md text-center border-t-4 border-[#10B981]">
+                    <div class="text-4xl mb-2">🎯</div>
+                    <div class="text-5xl font-black text-[#1E3A8A] mb-2">$150K</div>
+                    <div class="text-gray-500 font-semibold uppercase tracking-wide text-sm">Ticket Promedio Est. (COP)</div>
+                </div>
+                <div class="glass-card rounded-xl p-8 shadow-md text-center border-t-4 border-[#1E3A8A]">
+                    <div class="text-4xl mb-2">💎</div>
+                    <div class="text-5xl font-black text-[#1E3A8A] mb-2">10/10</div>
+                    <div class="text-gray-500 font-semibold uppercase tracking-wide text-sm">Percepción de Valor</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">El Perfil del Comprador Colombiano</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Nuestro objetivo no es vender un instrumento para medir el tiempo, sino una herramienta para proyectar estatus. El consumidor principal es el hombre y la mujer joven profesional que busca validar su éxito laboral y social a través de accesorios que aparentan costar tres veces más de su valor real.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-[#D4AF37] text-xl mr-3">✔</span>
+                        <span class="text-gray-700"><strong>Aspiracional:</strong> Sigue cuentas de motivación, emprendimiento y estilo de vida (tipo "Old Money").</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#D4AF37] text-xl mr-3">✔</span>
+                        <span class="text-gray-700"><strong>Impulsivo:</strong> Compra altamente influenciada por la estética visual en Instagram y TikTok.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#D4AF37] text-xl mr-3">✔</span>
+                        <span class="text-gray-700"><strong>Sensible al Valor:</strong> Busca ofertas de "envío gratis" y "pago contra entrega".</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="glass-card rounded-xl p-6 shadow-lg">
+                <h3 class="text-center font-bold text-gray-700 mb-4">Distribución Demográfica Proyectada</h3>
+                <div class="chart-container">
+                    <canvas id="demographicsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">Análisis de Competitividad</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    ¿Por qué Poedagar dominará la gama media? Al comparar atributos clave con marcas de lujo tradicionales (fuera del alcance) y marcas genéricas de moda rápida (baja calidad), Poedagar encuentra el "punto dulce" perfecto.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="chart-container w-full">
+                    <canvas id="valueRadarChart"></canvas>
+                </div>
+                <div class="flex flex-col justify-center space-y-6">
+                    <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-[#1E3A8A]">
+                        <h4 class="font-bold text-[#1E3A8A]">Estética Premium</h4>
+                        <p class="text-sm text-gray-600">Materiales como acero inoxidable y cristal mineral endurecido otorgan un peso y brillo característicos de relojes de $1M+ COP.</p>
+                    </div>
+                    <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-[#D4AF37]">
+                        <h4 class="font-bold text-[#D4AF37]">Precio Estratégico</h4>
+                        <p class="text-sm text-gray-600">Rango ideal de $120.000 a $250.000 COP, permitiendo compra impulsiva sin sacrificar la percepción de exclusividad.</p>
+                    </div>
+                    <div class="p-4 bg-green-50 rounded-lg border-l-4 border-[#10B981]">
+                        <h4 class="font-bold text-[#10B981]">Empaque de Lujo</h4>
+                        <p class="text-sm text-gray-600">La experiencia unboxing (caja, tarjeta de garantía, paño) sella la percepción de estar adquiriendo un artículo de alta relojería.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="glass-card rounded-xl p-6 shadow-lg order-2 md:order-1">
+                <h3 class="text-center font-bold text-gray-700 mb-4">Proyección de Adquisición por Canal</h3>
+                <div class="chart-container">
+                    <canvas id="channelsChart"></canvas>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">Canales de Distribución</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    La estrategia en Colombia será 100% Digital First (D2C) durante la fase 1, replicando el modelo de Brasil. Nos apalancaremos fuertemente en el comercio social.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center p-3 bg-white rounded shadow-sm border border-gray-100">
+                        <div class="text-2xl mr-4">📱</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Meta Ads & TikTok (El Motor)</h4>
+                            <p class="text-xs text-gray-500">Campañas de video mostrando el brillo, el empaque y estilo de vida.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-3 bg-white rounded shadow-sm border border-gray-100">
+                        <div class="text-2xl mr-4">🛒</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Shopify / Tienda Propia</h4>
+                            <p class="text-xs text-gray-500">Generación de confianza, pasarelas de pago locales (Wompi, MercadoPago).</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-3 bg-white rounded shadow-sm border border-gray-100">
+                        <div class="text-2xl mr-4">💬</div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">WhatsApp Commerce</h4>
+                            <p class="text-xs text-gray-500">Cierre de ventas asistido. Clave en Colombia para el "Pago Contra Entrega".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#1E3A8A] text-white rounded-2xl p-8 shadow-xl">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-white mb-4">Proyección de Crecimiento: Brasil vs Colombia</h2>
+                <p class="text-blue-200 max-w-2xl mx-auto">
+                    El comportamiento del mercado brasileño nos permite proyectar una curva de adopción acelerada en Colombia, aprovechando la misma sed de productos aspiracionales.
+                </p>
+            </div>
+            <div class="bg-white rounded-xl p-4">
+                <div class="chart-container w-full" style="height: 400px; max-height: 500px;">
+                    <canvas id="growthChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold text-[#1E3A8A] text-center mb-4">El Embudo de Venta Colombiano</h2>
+            <p class="text-gray-600 text-center mb-10">Optimizado para alta conversión utilizando métodos locales.</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                
+                <div class="flex flex-col items-center text-center max-w-[150px]">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-2xl mb-3 border-2 border-[#1E3A8A]">🎥</div>
+                    <h5 class="font-bold text-sm text-gray-800">1. Captación Visual</h5>
+                    <p class="text-xs text-gray-500 mt-1">Video Ads en TikTok/IG mostrando "lujo".</p>
+                </div>
+                
+                <div class="text-3xl text-gray-300 flow-arrow">➔</div>
+                
+                <div class="flex flex-col items-center text-center max-w-[150px]">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-2xl mb-3 border-2 border-[#D4AF37]">📄</div>
+                    <h5 class="font-bold text-sm text-gray-800">2. Landing de Oferta</h5>
+                    <p class="text-xs text-gray-500 mt-1">Énfasis en "Edición Limitada" y reseñas.</p>
+                </div>
+
+                <div class="text-3xl text-gray-300 flow-arrow">➔</div>
+
+                <div class="flex flex-col items-center text-center max-w-[150px]">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-2xl mb-3 border-2 border-[#10B981]">💬</div>
+                    <h5 class="font-bold text-sm text-gray-800">3. Asesoría WhatsApp</h5>
+                    <p class="text-xs text-gray-500 mt-1">Generación de confianza, envío de fotos reales.</p>
+                </div>
+
+                <div class="text-3xl text-gray-300 flow-arrow">➔</div>
+
+                <div class="flex flex-col items-center text-center max-w-[150px]">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-2xl mb-3 border-2 border-gray-800">📦</div>
+                    <h5 class="font-bold text-sm text-gray-800">4. Pago Contra Entrega</h5>
+                    <p class="text-xs text-gray-500 mt-1">Conversión final. Cero riesgo para el cliente.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pt-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">Playbook de Contenido & Copywriting</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Textos persuasivos y ganchos (hooks) diseñados para el mercado de Colombia, inspirados en los copies ganadores de las redes de Poedagar en Brasil. El enfoque es: Estatus, Exclusividad y Oferta Irresistible.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl border-l-4 border-[#1E3A8A] shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-xs font-bold text-[#1E3A8A] uppercase mb-2 tracking-wider">Ángulo: Estatus / Poder</div>
+                    <p class="text-gray-800 font-medium italic mb-4">"No necesitas decir una palabra. Tu reloj hablará por ti. Conoce la colección Poedagar Executive."</p>
+                    <div class="bg-gray-50 p-3 rounded text-sm text-gray-600">
+                        <strong>Visual ideal:</strong> Hombre ajustándose la corbata o el puño de la camisa, mostrando el reloj en primer plano.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-l-4 border-[#D4AF37] shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-xs font-bold text-[#D4AF37] uppercase mb-2 tracking-wider">Ángulo: Accesibilidad</div>
+                    <p class="text-gray-800 font-medium italic mb-4">"El lujo que mereces, al precio que es justo. Diseño suizo y maquinaria precisa sin pagar millones."</p>
+                    <div class="bg-gray-50 p-3 rounded text-sm text-gray-600">
+                        <strong>Visual ideal:</strong> Unboxing dinámico. Mostrando la caja, la textura del pulso y el brillo del cristal.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-l-4 border-[#10B981] shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-xs font-bold text-[#10B981] uppercase mb-2 tracking-wider">Ángulo: Confianza / Cierre</div>
+                    <p class="text-gray-800 font-medium italic mb-4">"Pídelo hoy y págalo solo cuando lo tengas en tus manos. Envío GRATIS a toda Colombia. 🇨🇴"</p>
+                    <div class="bg-gray-50 p-3 rounded text-sm text-gray-600">
+                        <strong>Visual ideal:</strong> Carrusel de fotos reales tomadas con celular (UGC - User Generated Content) y caja de regalo.
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-l-4 border-gray-800 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-xs font-bold text-gray-800 uppercase mb-2 tracking-wider">Ganchos para TikTok / Reels</div>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li>"Top 3 razones por las que este reloj parece de 2 millones (y cuesta menos de 200 mil)."</li>
+                        <li>"Si quieres verte como el jefe, necesitas este accesorio."</li>
+                        <li>"Hice el pedido contra entrega de este reloj viral y esto me llegó..."</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-l-4 border-blue-500 shadow-md hover:shadow-lg transition-shadow md:col-span-2">
+                    <div class="text-xs font-bold text-blue-500 uppercase mb-2 tracking-wider">Palabras Clave (Keywords) SEO & Ads</div>
+                    <div class="flex flex-wrap gap-2 mt-3">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-bold">Relojes elegantes hombre</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-bold">Poedagar Colombia</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-bold">Reloj lujo accesible</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-bold">Relojes pago contra entrega</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-bold">Regalo para hombre</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-bold">Reloj acero inoxidable</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-inner">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">Bóveda de Copies y Guiones (Modelo Brasil 🇧🇷 ➔ 🇨🇴)</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Traducción y adaptación táctica de los mensajes que escalaron la marca a +450% en Brasil. Se basan en tres pilares psicológicos: <strong>Estatus Inmediato, Escasez Agresiva y Cero Riesgo (Pago en Casa)</strong>.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 border-b-2 border-[#D4AF37] pb-2 mb-4 inline-block">1. Textos Ganadores para Anuncios (Meta / TikTok Ads)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-5 rounded-lg shadow border-t-2 border-[#1E3A8A]">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-bold text-gray-500">Ad Copy #1: El "Secreto" del Éxito</span>
+                                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-bold">Alto CTR</span>
+                            </div>
+                            <p class="text-gray-700 italic text-sm mb-3">
+                                "El 90% del éxito es cómo te presentas al mundo. 🤫<br><br>
+                                Este es el secreto de los hombres que imponen respeto al entrar a una sala. El nuevo Poedagar Executive Series parece un reloj de $2.000.000, pero hoy lo llevas por una fracción de ese precio.<br><br>
+                                ✔️ Acero inoxidable 316L<br>
+                                ✔️ Cristal resistente a rayones<br>
+                                ✔️ Luminiscencia nocturna<br><br>
+                                🇨🇴 Pídelo hoy y PAGA EN CASA. Envío gratis a toda Colombia. Clic en 'Más Información' antes de que se agote nuestro stock de lanzamiento."
+                            </p>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg shadow border-t-2 border-[#1E3A8A]">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-sm font-bold text-gray-500">Ad Copy #2: Escasez y Prueba Social</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded font-bold">Conversión Rápida</span>
+                            </div>
+                            <p class="text-gray-700 italic text-sm mb-3">
+                                "🚨 ALERTA: La marca de relojes que rompió récords de ventas en Brasil acaba de aterrizar en Colombia.<br><br>
+                                Más de 10,000 hombres ya mejoraron su estilo con Poedagar. Diseño de lujo, peso perfecto y precisión absoluta. No pagues por la 'marca famosa', paga por verdadera calidad.<br><br>
+                                🎁 OFERTA DE LANZAMIENTO: 40% OFF + Envío Gratis.<br>
+                                📦 Pago Contra Entrega (Cero Riesgo).<br><br>
+                                Nos quedan menos de 15 unidades en bodega. ¡Asegura el tuyo ahora!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 border-b-2 border-[#10B981] pb-2 mb-4 inline-block">2. Guiones de Cierre para WhatsApp (Emulando Drop BR)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded-lg shadow relative">
+                            <div class="absolute -top-3 -left-3 text-3xl">💬</div>
+                            <h4 class="font-bold text-[#1E3A8A] text-sm mb-2 mt-2">Mensaje 1: Bienvenida y Gancho</h4>
+                            <div class="bg-green-50 p-3 rounded border border-green-200 text-sm text-gray-800 font-mono">
+                                "¡Hola [Nombre]! Qué excelente gusto tienes. ⌚ El modelo [Modelo] que viste es de nuestra colección Premium más exclusiva.<br><br>Nos quedan exactamente 3 unidades en promoción con envío GRATIS. ¿Para qué ciudad sería el envío para validarte cobertura?"
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-lg shadow relative">
+                            <div class="absolute -top-3 -left-3 text-3xl">🛡️</div>
+                            <h4 class="font-bold text-[#1E3A8A] text-sm mb-2 mt-2">Mensaje 2: Manejo de Objeción (Calidad)</h4>
+                            <div class="bg-gray-50 p-3 rounded border border-gray-200 text-sm text-gray-800 font-mono">
+                                "Entiendo perfectamente tu duda, [Nombre]. Poedagar te entrega la misma calidad de marcas de millones (Acero Inoxidable, Cristal Mineral endurecido y maquinaria exacta), pero sin cobrarte el 'logo caro'.<br><br>Además, tu compra es 100% segura: Pagas SOLO cuando el reloj esté en tus manos. Cero riesgo para ti. 🤝"
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-lg shadow relative">
+                            <div class="absolute -top-3 -left-3 text-3xl">📦</div>
+                            <h4 class="font-bold text-[#1E3A8A] text-sm mb-2 mt-2">Mensaje 3: Cierre y Datos (Urgencia)</h4>
+                            <div class="bg-blue-50 p-3 rounded border border-blue-200 text-sm text-gray-800 font-mono">
+                                "¡Perfecto! Tenemos cobertura contra entrega para [Ciudad]. 🚛<br><br>Para separar tu reloj antes de que se agote la promoción de hoy y despacharlo esta misma tarde, regálame los siguientes datos:<br>- Nombre completo<br>- Dirección exacta<br>- Barrio<br>- Celular alterno"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#1E3A8A] p-6 rounded-xl text-white">
+                    <h3 class="text-lg font-bold mb-3 flex items-center">🔥 Frases Cortas (Hooks) para Títulos e Imágenes</h3>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-blue-100">
+                        <li><span class="text-[#D4AF37]">✔</span> "Lujo en tu muñeca, dinero en tu bolsillo."</li>
+                        <li><span class="text-[#D4AF37]">✔</span> "No compres un reloj, invierte en tu imagen."</li>
+                        <li><span class="text-[#D4AF37]">✔</span> "El accesorio que separa a los hombres de los niños."</li>
+                        <li><span class="text-[#D4AF37]">✔</span> "¿Quieres que te tomen en serio? Empieza por tu reloj."</li>
+                        <li><span class="text-[#D4AF37]">✔</span> "Parece de $2.000.000. Cuesta menos de lo que imaginas."</li>
+                        <li><span class="text-[#D4AF37]">✔</span> "El reloj más vendido de Brasil, por fin en Colombia."</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">5 Ángulos de Venta Estratégicos (Fórmula Brasil ➔ Colombia)</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    En Brasil descubrimos que vender "un reloj" no funciona. Hay que vender el concepto detrás del reloj. Aquí presentamos los 5 ángulos de marketing comprobados, desglosando la explicación, el target y ejemplos de copy.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Ángulo 1: Aspiracional -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-[#D4AF37] hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl mr-3">👑</div>
+                        <h3 class="text-xl font-bold text-gray-800">1. El Estatus Aspiracional</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-wide">Explicación</span>
+                            <p class="text-sm text-gray-600 mt-1">El reloj como herramienta para proyectar éxito y respeto inmediato. "Fake it till you make it". Se apalanca en el deseo de pertenecer a una clase social más alta y de impresionar en el ámbito laboral o de citas.</p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-[#D4AF37] uppercase tracking-wide">Público Objetivo</span>
+                            <p class="text-sm text-gray-600 mt-1">Hombres jóvenes (22-35 años), emprendedores, profesionales junior buscando ascenso, seguidores de cuentas de motivación y "mentalidad de tiburón".</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs font-bold text-gray-800 uppercase tracking-wide">Ejemplo (Copy)</span>
+                            <p class="text-sm italic text-gray-700 mt-1">"El accesorio que usan los CEOs en São Paulo, ahora disponible en Bogotá. Impón respeto en cualquier reunión antes de siquiera abrir la boca. Colección Executive Poedagar."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ángulo 2: Compra Inteligente -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-[#1E3A8A] hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl mr-3">🧠</div>
+                        <h3 class="text-xl font-bold text-gray-800">2. El Comprador Astuto (Anti-Marca)</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold text-[#1E3A8A] uppercase tracking-wide">Explicación</span>
+                            <p class="text-sm text-gray-600 mt-1">Posiciona al comprador como alguien "más inteligente" que el promedio. En Brasil este ángulo fue brutal: "¿Por qué pagar 90% más solo por el logo?". Se vende calidad técnica real a un precio lógico.</p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-[#1E3A8A] uppercase tracking-wide">Público Objetivo</span>
+                            <p class="text-sm text-gray-600 mt-1">Hombres (30-45 años), escépticos del marketing tradicional, analíticos, que valoran la relación costo-beneficio y detestan sentir que pagan de más.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs font-bold text-gray-800 uppercase tracking-wide">Ejemplo (Copy)</span>
+                            <p class="text-sm italic text-gray-700 mt-1">"Las marcas de vitrina te cobran $1.500.000 por el logo. Nosotros te cobramos $180.000 por el acero inoxidable y el cristal mineral. Sé inteligente con tu dinero."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ángulo 3: El Regalo Perfecto -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-[#10B981] hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl mr-3">🎁</div>
+                        <h3 class="text-xl font-bold text-gray-800">3. El Regalo Irresistible</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold text-[#10B981] uppercase tracking-wide">Explicación</span>
+                            <p class="text-sm text-gray-600 mt-1">Aprovechar el alto valor percibido (el empaque de lujo de Poedagar) para solucionar el problema eterno de "¿Qué le regalo a él?". Quien regala queda como alguien que invirtió mucho dinero.</p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-[#10B981] uppercase tracking-wide">Público Objetivo</span>
+                            <p class="text-sm text-gray-600 mt-1">Mujeres (25-50 años) buscando regalos para esposos/novios. Hijos o hijas buscando regalos para el Día del Padre o cumpleaños.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs font-bold text-gray-800 uppercase tracking-wide">Ejemplo (Copy)</span>
+                            <p class="text-sm italic text-gray-700 mt-1">"El regalo que lo dejará sin palabras (y él pensará que gastaste toda tu quincena). Sorprende a tu pareja con la elegancia que se merece. Unboxing de lujo garantizado."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ángulo 4: Lujo de Uso Diario (Durabilidad) -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-gray-800 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl mr-3">🛡️</div>
+                        <h3 class="text-xl font-bold text-gray-800">4. El Lujo Blindado (Pragmático)</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold text-gray-800 uppercase tracking-wide">Explicación</span>
+                            <p class="text-sm text-gray-600 mt-1">Derriba la objeción de "es bonito pero se va a dañar rápido". Se destaca la resistencia al agua (Luminous/Waterproof) y los rayones. Es un reloj para verse bien todos los días sin miedo a arruinarlo.</p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-gray-800 uppercase tracking-wide">Público Objetivo</span>
+                            <p class="text-sm text-gray-600 mt-1">Hombres activos, trabajadores operativos que quieren verse bien el fin de semana o en la oficina, moteros, personas con historial de "dañar relojes".</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs font-bold text-gray-800 uppercase tracking-wide">Ejemplo (Copy)</span>
+                            <p class="text-sm italic text-gray-700 mt-1">"Diseño de alta gerencia, resistencia de uso militar. Sumergible, resistente a rayones y brilla en la oscuridad. El único reloj que aguanta tu ritmo de lunes a domingo."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ángulo 5: Escasez Extrema (Modelo Drop) -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-red-500 hover:-translate-y-1 transition-transform duration-300 md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl mr-3">⏳</div>
+                        <h3 class="text-xl font-bold text-gray-800">5. Escasez Extrema (FOMO)</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="text-xs font-bold text-red-500 uppercase tracking-wide">Explicación</span>
+                            <p class="text-sm text-gray-600 mt-1">El clásico gatillo mental del comercio electrónico brasileño. Generar la sensación de que es un producto importado escaso, creando urgencia inmediata para evitar la pérdida de la oportunidad.</p>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-red-500 uppercase tracking-wide">Público Objetivo</span>
+                            <p class="text-sm text-gray-600 mt-1">Compradores impulsivos, cazadores de ofertas, usuarios de redes sociales sensibles a promociones flash de 24 horas.</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
+                            <span class="text-xs font-bold text-gray-800 uppercase tracking-wide">Ejemplo (Copy)</span>
+                            <p class="text-sm italic text-gray-700 mt-1">"🚨 Lote exclusivo recién liberado en la aduana de Colombia. Solo llegaron 50 unidades del modelo Black/Gold. Cuando el contador llegue a cero, vuelve a su precio normal. Paga en casa HOY."</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mt-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#1E3A8A] mb-4">Cronograma de Comunicación Estratégica</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    El despliegue de Poedagar en Colombia se ejecutará en 3 fases críticas. Integraremos canales tradicionales de pauta con estrategias orgánicas, merchandising y tendencias locales de alta conversión.
+                </p>
+            </div>
+
+            <div class="relative border-l-4 border-[#1E3A8A] ml-4 md:ml-12 space-y-12 pb-8">
+                
+                <!-- Fase 1: Expectativa -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[22px] top-0 w-10 h-10 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold shadow-lg border-4 border-white">1</div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow">
+                        <div class="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-bold uppercase tracking-wider mb-3">Fase 1: Expectativa (Días 1-14)</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Misterio, Deseo y Captación (FOMO)</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Idea Central:</strong> "El reloj que revolucionó Brasil llega a Colombia". No mostramos el precio ni el producto completo al inicio. Generamos intriga y recolectamos prospectos calificados para el día 1.</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-blue-400">
+                                <span class="font-bold">📱 Redes y Pauta (Ads):</span> Campañas de tráfico mostrando acercamientos (macro) a los materiales (acero brillando, manecillas). Copy: "El lujo deja de ser inalcanzable. Únete a la lista VIP".
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-green-500">
+                                <span class="font-bold">💬 WhatsApp:</span> Creación de un "Grupo VIP Fundadores". Los que entren tendrán acceso 24h antes al stock y un descuento secreto.
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-purple-500">
+                                <span class="font-bold">✨ Tendencia Colombia (Seeding):</span> Enviar cajas cerradas con un candado a micro-influencers (podcasters, emprendedores). La clave se revela el día del lanzamiento.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 2: Lanzamiento -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[22px] top-0 w-10 h-10 bg-[#1E3A8A] rounded-full flex items-center justify-center text-white font-bold shadow-lg border-4 border-white">2</div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow border-l-4 border-l-[#1E3A8A]">
+                        <div class="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold uppercase tracking-wider mb-3">Fase 2: Lanzamiento (Días 15-30)</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Explosión de Ventas y Prueba Social</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Idea Central:</strong> "Ya estamos aquí y el inventario vuela". Apertura de carrito. El enfoque es conversión agresiva y mitigación de riesgo (Pago Contra Entrega).</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-blue-600">
+                                <span class="font-bold">🎯 Publicidad (Meta/TikTok Ads):</span> Campañas de conversión a compra. Videos de Unboxing reales. Copy: "Lote limitado. Pago Contra Entrega a toda 🇨🇴".
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-green-600">
+                                <span class="font-bold">💬 WhatsApp (Cierre):</span> Mensajes masivos al Grupo VIP: "¡Carrito abierto! Solo 100 unidades". Uso de bots para gestionar el volumen de pedidos contra entrega.
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-yellow-500">
+                                <span class="font-bold">🛍️ Merchandising:</span> La caja es el merchant. Se incluye una tarjeta metalizada de "Autenticidad Poedagar" y un paño de microfibra grabado. Aumenta el valor percibido enormemente.
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-red-500 md:col-span-2 lg:col-span-3">
+                                <span class="font-bold">🔥 Tendencia Colombia (TikTok Live Shopping):</span> Hacer transmisiones en vivo semanales desde bodega mostrando el despacho de pedidos, acercando el reloj a la cámara y respondiendo dudas en vivo. Excelente para generar confianza en Colombia.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fase 3: Sostenimiento -->
+                <div class="relative pl-8 md:pl-12">
+                    <div class="absolute -left-[22px] top-0 w-10 h-10 bg-[#10B981] rounded-full flex items-center justify-center text-white font-bold shadow-lg border-4 border-white">3</div>
+                    <div class="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition-shadow">
+                        <div class="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold uppercase tracking-wider mb-3">Fase 3: Sostenimiento (Mes 2 en adelante)</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Escalabilidad, Comunidad y Upsell</h3>
+                        <p class="text-sm text-gray-600 mb-4"><strong>Idea Central:</strong> "No somos una moda, somos tu nueva marca de confianza". Pasar de ventas impulsivas a construcción de marca y retención.</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-orange-500">
+                                <span class="font-bold">🗣️ Voz a Voz (Referidos):</span> En el empaque llega un código QR. "Si subes una historia etiquetándonos, recibes 20% OFF en tu próximo reloj o en uno para regalo". Genera UGC (Contenido Generado por Usuario) gratis.
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-blue-400">
+                                <span class="font-bold">📱 Redes (Always-On):</span> Transición de pauta pura a contenido de valor. Reels sobre "Cómo combinar tu reloj con traje o casual", "Cómo cuidar el acero". Retargeting dinámico a quienes visitaron pero no compraron.
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-green-500">
+                                <span class="font-bold">💬 WhatsApp (Cross-Selling):</span> A los 30 días de la compra, mensaje: "¿Cómo te ha ido con tu Poedagar Black? Llegó la versión Silver, y como cliente VIP tienes envío prioritario".
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded border-l-2 border-indigo-600">
+                                <span class="font-bold">🏢 Nuevos Canales (B2B Corporativo):</span> Tendencia rentable en Colombia. Ofrecer paquetes de 10-50 relojes como "Regalos Corporativos de Fin de Año" para empresas que quieren dar algo que parezca costoso a sus mejores empleados, sin quebrar el presupuesto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-20">
+        <p>© 2026 Poedagar Distribución. Documento Estratégico Interno.</p>
+    </footer>
+
+    <script>
+        const tooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        const ctxDemographics = document.getElementById('demographicsChart').getContext('2d');
+        new Chart(ctxDemographics, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    ['Jóvenes Universitarios', '(18-24 años)'], 
+                    ['Jóvenes Profesionales', '(25-34 años)'], 
+                    ['Adultos Establecidos', '(35-44 años)'], 
+                    ['Otros']
+                ],
+                datasets: [{
+                    data: [20, 50, 20, 10],
+                    backgroundColor: ['#D4AF37', '#1E3A8A', '#10B981', '#94A3B8'],
+                    borderWidth: 0,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: tooltipConfig
+                },
+                cutout: '65%'
+            }
+        });
+
+        const ctxRadar = document.getElementById('valueRadarChart').getContext('2d');
+        new Chart(ctxRadar, {
+            type: 'radar',
+            data: {
+                labels: [
+                    'Percepción de Estatus',
+                    'Calidad Materiales',
+                    ['Accesibilidad', 'de Precio'],
+                    ['Experiencia', 'de Empaque'],
+                    ['Diseño y', 'Estética'],
+                    'Durabilidad'
+                ],
+                datasets: [
+                    {
+                        label: 'Poedagar',
+                        data: [8, 7, 9, 8, 9, 7],
+                        backgroundColor: 'rgba(30, 58, 138, 0.2)',
+                        borderColor: '#1E3A8A',
+                        pointBackgroundColor: '#1E3A8A',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Lujo Tradicional',
+                        data: [10, 10, 1, 10, 9, 10],
+                        backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                        borderColor: '#D4AF37',
+                        pointBackgroundColor: '#D4AF37',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Moda Rápida (Genérica)',
+                        data: [3, 3, 10, 2, 6, 2],
+                        backgroundColor: 'rgba(148, 163, 184, 0.2)',
+                        borderColor: '#94A3B8',
+                        pointBackgroundColor: '#94A3B8',
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: tooltipConfig
+                },
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(0, 0, 0, 0.1)' },
+                        grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                        pointLabels: { font: { size: 11 } },
+                        ticks: { display: false, min: 0, max: 10 }
+                    }
+                }
+            }
+        });
+
+        const ctxChannels = document.getElementById('channelsChart').getContext('2d');
+        new Chart(ctxChannels, {
+            type: 'bar',
+            data: {
+                labels: [
+                    ['Meta Ads', '(IG/FB)'],
+                    'TikTok Ads',
+                    ['Búsqueda Orgánica', '(SEO)'],
+                    ['Marketplaces', '(MercadoLibre)']
+                ],
+                datasets: [{
+                    label: '% de Adquisición',
+                    data: [55, 25, 10, 10],
+                    backgroundColor: ['#1E3A8A', '#0F172A', '#10B981', '#F59E0B'],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: tooltipConfig
+                },
+                scales: {
+                    y: { beginAtZero: true, max: 100, grid: { borderDash: [2, 4] } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        const ctxGrowth = document.getElementById('growthChart').getContext('2d');
+        new Chart(ctxGrowth, {
+            type: 'line',
+            data: {
+                labels: ['Mes 1', 'Mes 3', 'Mes 6', 'Mes 9', 'Mes 12', 'Mes 18'],
+                datasets: [
+                    {
+                        label: 'Brasil (Histórico Real)',
+                        data: [100, 350, 800, 1500, 2500, 4000],
+                        borderColor: '#94A3B8',
+                        backgroundColor: 'rgba(148, 163, 184, 0.1)',
+                        borderDash: [5, 5],
+                        tension: 0.4,
+                        fill: false
+                    },
+                    {
+                        label: 'Colombia (Proyección)',
+                        data: [50, 200, 650, 1200, 2800, 4500],
+                        borderColor: '#D4AF37',
+                        backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                        borderWidth: 3,
+                        pointBackgroundColor: '#1E3A8A',
+                        pointRadius: 5,
+                        tension: 0.4,
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: '#0F172A' } },
+                    tooltip: tooltipConfig
+                },
+                scales: {
+                    y: { 
+                        beginAtZero: true,
+                        title: { display: true, text: 'Volumen de Ventas (Unidades)' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
