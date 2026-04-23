@@ -1,0 +1,12 @@
+{
+  "name": "info-poedagar",
+  "version": "1.0.0",
+  "description": "Sitio estático para Info Poedagar",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l tcp://0.0.0.0:${PORT:-8080}"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
